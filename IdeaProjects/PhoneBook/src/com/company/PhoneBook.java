@@ -1,3 +1,5 @@
+//TODO: store phonebook somewhere (XML?)
+
 package com.company;
 
 import java.util.*;
@@ -36,7 +38,6 @@ public class PhoneBook {
     //TODO: implement this
     public void EditEntry(String key, String newName, String newSurname, String newEmail, String newPhonenumber)
     {
-        ;
     }
 
 
@@ -55,10 +56,9 @@ public class PhoneBook {
         System.out.println("\n\nPhonebook:");
 
         Set set = phonebook.entrySet();
-        Iterator i = set.iterator();
-        while(i.hasNext()) {
-            Map.Entry me = (Map.Entry)i.next();
-            DisplayedEntry = (PhoneBookEntry)me.getValue();
+        for (Object aSet : set) {
+            Map.Entry me = (Map.Entry) aSet;
+            DisplayedEntry = (PhoneBookEntry) me.getValue();
             DisplayEntry(DisplayedEntry);
         }
     }
