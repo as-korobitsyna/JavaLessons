@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GoalList test" verbose="1">
+    <test name="Unit testing">
+        <classes>
+            <class name = "test.UnitTests" />
+        </classes>
+    </test>
+
+    <test name="Scenario testing">
+        <classes>
+        <class name = "test.Scenario" />
+        </classes>
+    </test>
+</suite>
